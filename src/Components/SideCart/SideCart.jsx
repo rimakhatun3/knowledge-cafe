@@ -17,7 +17,7 @@ const SideCart = (props) => {
             <h2 className='font-bold text-center my-5 py-4 px-4'>Bookmarked Blogs: {cart.length}  </h2>
             
             {cart.map((data,index)=>(
-            <div className='border rounded-md my-2 bg-white py-4 mx-4 px-5 '>
+            <div key={index} className='border rounded-md my-2 bg-white py-4 mx-4 px-5 '>
                 
                 <p> {data.blogs}</p>
                 
