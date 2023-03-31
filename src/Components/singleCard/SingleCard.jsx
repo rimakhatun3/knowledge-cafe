@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookBookmark} from '@fortawesome/free-solid-svg-icons'
+import { faBookmark} from '@fortawesome/free-solid-svg-icons'
 
 const SingleCard = (props) => {
-    const{authorName,authorTitle,picture,watchTime} = props.card
+    const{authorName,authorTitle,picture,watchTime,authorImg} = props.card
     console.log(props.card)
     return (
         <div>
@@ -11,10 +11,10 @@ const SingleCard = (props) => {
   
   <div className="card-body">
   <figure><img src={picture} alt="Shoes" /></figure>
-       <div className='flex justify-between items-center'>
+       <div className='flex justify-between items-center mt-5'>
        <div className='flex gap-5 items-center justify-start mt-5'>
         <div className="w-10 rounded-full ">
-          <img src="https://cdn-icons-png.flaticon.com/512/187/187488.png?w=740&t=st=1680222744~exp=1680223344~hmac=05b634c8cf652cca4574e1fc0d65af770063b02b8bfa66587f29d7bd3431b2e6" alt="" />
+          <img className='w-10 rounded-full' src={authorImg} alt="" />
         </div>
         <div>
             <p>{authorName}</p>
@@ -23,11 +23,11 @@ const SingleCard = (props) => {
         </div>
         <div className='flex gap-2' >
     <p>{watchTime} min read</p>
-    <button onClick={()=>props.handleAddToCart(props.card)}><FontAwesomeIcon icon={faBookBookmark} /></button>
+    <button onClick={()=>props.handleAddToCart(props.card)}><FontAwesomeIcon icon={faBookmark} /></button>
 
 </div>
        </div>
-        <h2 className='text-left font-bold'>{authorTitle}</h2>
+        <h2 className='text-left font-bold mt-5'>{authorTitle}</h2>
      <div className='text-left'>
     <div className='flex mb-3'>
     <p>#Beginners</p> 
