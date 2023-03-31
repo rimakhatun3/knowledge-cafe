@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark} from '@fortawesome/free-solid-svg-icons'
 
 const SingleCard = (props) => {
-    const{authorName,authorTitle,picture,watchTime,authorImg} = props.card
-    console.log(props.card)
+    const{authorName,authorTitle,picture,watchTime,authorImg,blogs} = props.card
+    // console.log(props.card)
     return (
         <div>
             <div className="card w-full mb-5 bg-base-100 shadow-xl ">
@@ -23,7 +23,7 @@ const SingleCard = (props) => {
         </div>
         <div className='flex gap-2' >
     <p>{watchTime} min read</p>
-    <button onClick={()=>props.handleAddToCart(props.card)}><FontAwesomeIcon icon={faBookmark} /></button>
+    <button onClick={()=>props.handleAddToCart(props.card) }><FontAwesomeIcon icon={faBookmark} /></button>
 
 </div>
        </div>
@@ -33,7 +33,8 @@ const SingleCard = (props) => {
     <p>#Beginners</p> 
       <p>#Programing</p>
     </div>
-      <a className=' text-blue-700 underline ' href="./read">Mark as read</a>
+      {/* <a className=' text-blue-700 underline ' href="./read">Mark as read</a> */}
+      <button onClick={()=>props.handleBookMark(blogs)} className=' text-blue-700 underline ' href="./read">Mark as read</button>
         </div>  
   
   </div>
