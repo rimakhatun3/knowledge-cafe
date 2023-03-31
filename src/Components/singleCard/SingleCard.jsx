@@ -7,11 +7,12 @@ const SingleCard = (props) => {
     console.log(props.card)
     return (
         <div>
-            <div className="card w-full mb-5 bg-base-100 shadow-xl flex justify-center items-end   ">
+            <div className="card w-full mb-5 bg-base-100 shadow-xl ">
   
   <div className="card-body">
   <figure><img src={picture} alt="Shoes" /></figure>
-        <div className='flex my-5 gap-5 items-center justify-start'>
+       <div className='flex justify-between items-center'>
+       <div className='flex gap-5 items-center justify-start mt-5'>
         <div className="w-10 rounded-full ">
           <img src="https://cdn-icons-png.flaticon.com/512/187/187488.png?w=740&t=st=1680222744~exp=1680223344~hmac=05b634c8cf652cca4574e1fc0d65af770063b02b8bfa66587f29d7bd3431b2e6" alt="" />
         </div>
@@ -20,19 +21,23 @@ const SingleCard = (props) => {
             <p>Mar 14 (4 Days ago)</p>
         </div>
         </div>
+        <div className='flex gap-2' >
+    <p>{watchTime} min read</p>
+    <button onClick={()=>props.handleAddToCart(props.card)}><FontAwesomeIcon icon={faBookBookmark} /></button>
+
+</div>
+       </div>
         <h2 className='text-left font-bold'>{authorTitle}</h2>
      <div className='text-left'>
-     <p>#Beginners</p> 
+    <div className='flex mb-3'>
+    <p>#Beginners</p> 
       <p>#Programing</p>
+    </div>
       <a className=' text-blue-700 underline ' href="./read">Mark as read</a>
         </div>  
   
   </div>
-  <div className='flex gap-2' >
-    <p>{watchTime}</p>
-    <button onClick={()=>props.setCart(props.card)}><FontAwesomeIcon icon={faBookBookmark} /></button>
-
-</div>
+ 
 </div>
 
 
