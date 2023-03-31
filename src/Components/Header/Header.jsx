@@ -14,7 +14,7 @@ const Header = () => {
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img src="" alt="" />
+          <img src="https://cdn-icons-png.flaticon.com/512/187/187488.png?w=740&t=st=1680222744~exp=1680223344~hmac=05b634c8cf652cca4574e1fc0d65af770063b02b8bfa66587f29d7bd3431b2e6" alt="" />
         </div>
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
