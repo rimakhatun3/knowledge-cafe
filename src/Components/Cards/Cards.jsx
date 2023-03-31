@@ -3,6 +3,7 @@ import SideCart from '../SideCart/SideCart'
 import SingleCard from '../singleCard/SingleCard';
 const Cards = () => {
     const [cards,setCards] =useState([])
+    const [cart,setCart] = useState(null)
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res=>res.json())
@@ -13,12 +14,12 @@ const Cards = () => {
              <div className='grid md:grid-cols-6'>
             <div className='col-span-4'>
 <div>
-    {cards.map(card=><SingleCard card={card} key={card.id}></SingleCard>)}
+    {cards.map(card=><SingleCard card={card} key={card.id} setCart={setCart} cart={cart}></SingleCard>)}
 </div>
             </div>
 <div className='col-span-2'>
 
-   <SideCart></SideCart>
+   <SideCart cart={cart}></SideCart>
 </div>
         </div>
         </div>

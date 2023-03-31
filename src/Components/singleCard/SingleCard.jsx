@@ -6,8 +6,8 @@ const SingleCard = (props) => {
     const{authorName,authorTitle,picture,watchTime} = props.card
     console.log(props.card)
     return (
-        <div className='flex justify-between'>
-            <div className="card w-full mb-5 bg-base-100 shadow-xl   ">
+        <div>
+            <div className="card w-full mb-5 bg-base-100 shadow-xl flex justify-center items-end   ">
   
   <div className="card-body">
   <figure><img src={picture} alt="Shoes" /></figure>
@@ -28,9 +28,9 @@ const SingleCard = (props) => {
         </div>  
   
   </div>
-  <div >
+  <div className='flex gap-2' >
     <p>{watchTime}</p>
-    <span><FontAwesomeIcon icon={faBookBookmark} /></span>
+    <button onClick={()=>props.setCart(props.card)}><FontAwesomeIcon icon={faBookBookmark} /></button>
 
 </div>
 </div>
