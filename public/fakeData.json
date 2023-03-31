@@ -13,7 +13,8 @@
   },
   {
     "id": "6423faae17f42fb7790f8463",
-    "authorName": "Moyna",
+    "authorImg":"https://cdn-icons-png.flaticon.com/512/187/187488.png?w=740&t=st=1680222744~exp=1680223344~hmac=05b634c8cf652cca4574e1fc0d65af770063b02b8bfa66587f29d7bd3431b2e6",
+    "authorName": "MST.Moyna",
     "authorTitle": "How to get your first job as a self-taught programmer",
     "watchTime": 10 ,
    
@@ -24,6 +25,7 @@
   {
     "id": "6423faae17f42fb7790f8464",
     "authorName": "Shamima akter pinky",
+    "authorImg":"https://cdn-icons-png.flaticon.com/512/187/187488.png?w=740&t=st=1680222744~exp=1680223344~hmac=05b634c8cf652cca4574e1fc0d65af770063b02b8bfa66587f29d7bd3431b2e6",
     "authorTitle": "How to get your first job as a self-taught programmer",
     "watchTime": 15 ,
    
@@ -36,7 +38,7 @@
     "authorName": "Mominul islam",
     "authorTitle": "How to get your first job as a self-taught programmer",
     "watchTime": 5 ,
-   
+   "authorImg":"https://t4.ftcdn.net/jpg/03/64/21/11/240_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
     "blogs":"Master Microsoft Power Platform and Become an In-Demand!",
     "picture": "https://img.freepik.com/free-vector/flat-design-content-management-system-illustration_23-2148825245.jpg?w=740&t=st=1680222451~exp=1680223051~hmac=93b6602a9722d51c88e4fac5cf3e480b4e227c743eca030c14ab990957e1f6f3",
     "about": "Abraham Benjamin de Villiers is a former South African international cricketer."
@@ -46,7 +48,7 @@
     "authorName": "Charming Prince",
     "authorTitle": "How to get your first job as a self-taught programmer",
     "watchTime": 15 ,
-   
+   "authorImg":"https://t4.ftcdn.net/jpg/00/65/54/01/240_F_65540119_XVOZEPUyzgbrn7VLoHqOZVskulWpwHKK.jpg",
     "blogs":"Master Microsoft Power Platform and Become an In-Demand!",
     "picture": "https://img.freepik.com/free-vector/data-science-programming_39422-1055.jpg?w=740&t=st=1680222521~exp=1680223121~hmac=8754f03518ef0804eceff3c22aaf21c23716d8172c1a41c28be3dda4f4887254"
    
@@ -55,6 +57,7 @@
   {
     "id": "6423faae17f42fb7790f8468",
     "authorName": "Dannny",
+    "authorImg":"https://t4.ftcdn.net/jpg/01/29/91/19/240_F_129911911_4zgnIdibNhZXLDVGhQ4Dl0rwAcp6gkIa.jpg",
     "authorTitle": "How to get your first job as a self-taught programmer",
     "watchTime": 20 ,
    

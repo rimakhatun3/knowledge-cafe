@@ -13,7 +13,7 @@ const SingleCard = (props) => {
   <figure><img src={picture} alt="Shoes" /></figure>
        <div className='flex justify-between items-center mt-5'>
        <div className='flex gap-5 items-center justify-start mt-5'>
-        <div className="w-10 rounded-full ">
+        <div>
           <img className='w-10 rounded-full' src={authorImg} alt="" />
         </div>
         <div>
