@@ -34,7 +34,7 @@ const SingleCard = (props) => {
       <p>#Programing</p>
     </div>
       {/* <a className=' text-blue-700 underline ' href="./read">Mark as read</a> */}
-      <button onClick={()=>props.handleBookMark(blogs)} className=' text-blue-700 underline ' href="./read">Mark as read</button>
+      <button onClick={()=>props.handleWatchTime(props.card)} className=' text-blue-700 underline ' href="./read">Mark as read</button>
         </div>  
   
   </div>
