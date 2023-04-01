@@ -3,7 +3,6 @@ import React from 'react';
 
 const SideCart = (props) => {
     const {cart,watchTime} =props;
-    console.log(cart)
   let readingTime = 0;
   for(const data of watchTime){
    readingTime = readingTime + data.watchTime;

@@ -6,25 +6,33 @@ const Cards = () => {
     const [cards, setCards] = useState([])
     const [cart, setCart] = useState([])
     const[watchTime,setWatchTime] = useState([])
-    const doubleClick = () => toast("Wow so easy!")
-    const handleAddToCart = (product) => {
-        doubleClick()
-        const newCart = [...cart, product]
-        setCart(newCart)
-        // const isExist = cart.find(value => value.product === product)
-        // if (isExist) {
-        //     doubleClick()
-        // } 
-        
-
-    }
     
-
+    console.log(cards)
+   
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
             .then(data => setCards(data))
     }, [])
+
+    const handleAddToCart = (product) => {
+        toast("Already have Bookmarked")
+        const newCart = [...cart, product]
+            setCart(newCart)
+       
+        // const isExist = cards.find(p => p.blogs === product.blogs)
+        
+        // if (isExist) {
+        //     toast.error("Already have Bookmarked", { theme: "colored" })
+        // } 
+        // else{
+        //     toast.success("Added as Bookmark", { theme: "colored" });
+
+        //     const newCart = [...cart, product]
+        //     setCart(newCart)
+        // }
+
+    }
     const handleWatchTime=(time)=>{
         const newTime=[...watchTime,time]
         setWatchTime(newTime)
